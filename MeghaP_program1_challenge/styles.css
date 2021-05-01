@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* background: linear-gradient(to right, #060124, #94c7e4); */
+  background: #091921;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: minmax(60px, auto) repeat(5, 60px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  
+  font-family: 'Poppins', sans-serif;
+  border: 0.01px;
+  /* solid #0c2835; */
+  outline: none;
+  /* background-color: #e8e8e8; */
+  
+}
+
+.calculator-grid > button:hover {
+  background-color: rgb(92, 247, 53);
+}
+
+.delete
+{
+  background: #03b1ff;
+  color: #fff;
+}
+
+.span-two {
+  grid-column: span 2;
+  background-color: #ff3077;
+  color: #fff;
+  font-size: 0.80rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgb(255, 251, 251);
+  height: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 40px;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+}
+
+.output .previous-operand {
+  color: rgba(241, 62, 125, 0.96);
+  font-size: 1.50rem;
+}
+
+.output .current-operand {
+  color: rgb(2, 19, 84);
+  font-size: 1.75rem;
+}
+
+.button1
+ {
+   background-color: #008CBA;
+  }
+  .span
+  {
+    background-color: #008CBA;
+    color: #fff;
+    
+  }
+  .buttons
+  {
+    color: #fff;
+    background: #0c2835;
+    font-size: 1.10rem;
+  }

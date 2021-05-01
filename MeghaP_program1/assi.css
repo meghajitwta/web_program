@@ -1,0 +1,28 @@
+/* table,td,th{
+    border: 2px solid;
+    text-align: center;
+    background-color: rgb(103, 223, 157);
+    margin: auto;
+
+} */
+input{
+    text-align: center;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #7fe22e;
+    color: white;
+  }  
+  table{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+     
+  }
+  th:hover {
+      background-color: #b6f5e5;
+  }
+  
+  
