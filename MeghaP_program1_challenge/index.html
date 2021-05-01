@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calculator</title>
-  <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js" defer></script>
+	
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
-  <div class="calculator-grid">
-    <div class="output">
-      <div data-previous-operand class="previous-operand"></div>
-      <div data-current-operand class="current-operand"></div>
-    </div>
-    <button data-all-clear class="span-two">C</button>
-    <button data-delete class="delete">DEL</button>
-    <button data-operation class="buttons">/</button>
-    <button data-number class="buttons">1</button>
-    <button data-number class="buttons">2</button>
-    <button data-number class="buttons">3</button>
-    <button data-operation class="buttons">*</button>
-    <button data-number class="buttons">4</button>
-    <button data-number class="buttons">5</button>
-    <button data-number class="buttons">6</button>
-    <button data-operation class="buttons">+</button>
-    <button data-number class="buttons">7</button>
-    <button data-number class="buttons">8</button>
-    <button data-number class="buttons">9</button>
-    <button data-operation class="buttons">-</button>
-    <button data-number class="buttons">.</button>
-    <button data-number class="buttons">0</button>
-    <button data-number class="buttons">00</button>
-    <button data-equals class="span">=</button>
-  </div>
+	<div class="calculator-grid">
+		<div class="output" id="result"></div>
+        <button onclick="clr()" class="span-two">C</button>
+        <button onclick="del()" class="delete">DEL</button>
+        <button onclick="dis('/')" class="buttons">/</button>
+        <button onclick="dis('1')" class="buttons">1</button>
+        <button onclick="dis('2')" class="buttons">2</button>
+        <button onclick="dis('3')" class="buttons">3</button>
+        <button onclick="dis('*')" class="buttons">*</button>
+        <button onclick="dis('4')" class="buttons">4</button>
+        <button onclick="dis('5')" class="buttons">5</button>
+        <button onclick="dis('6')" class="buttons">6</button>
+        <button onclick="dis('+')" class="buttons">+</button>
+        <button onclick="dis('7')" class="buttons">7</button>
+        <button onclick="dis('8')" class="buttons">8</button>
+        <button onclick="dis('9')" class="buttons">9</button>
+        <button onclick="dis('-')" class="buttons">-</button>
+        <button onclick="dis('.')" class="buttons">.</button>
+        <button onclick="dis('0')" class="buttons">0</button>
+        <button onclick="dis('00')" class="buttons">00</button>
+        <button onclick="solve()" class="span">=</button>
+	</div>
 </body>
 </html>
