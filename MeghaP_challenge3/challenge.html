@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+ 
+<div class="header">
+  <a href="#default" class="logo">Traveller</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#">Places</a>
+    <a href="#last">Gallery</a>
+    <a href="#">About Us</a>
+    <a href="#">Search</a>
+    
+  </div>
+</div>
+
+<div class="container">
+<h1>Pondicherry</h1>
+        <p id="demo"></p>
+        <figure>
+        <img src ="pond.jpg" alt="Pondicherry" class="image">
+      </figure>
+        <div class="overlay">
+            <div class="text">Pondicherry</div>
+        </div>
+        
+        
+<script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = " Visit Again!";
+ids.setAttribute('style', "font-size: " + fs + "px; color: crimson");
+fs += 5;
+if (fs >= 50)
+{
+clearInterval(var1); //paused
+var2 = setInterval(deTimer, 500);
+
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = " Visit Again!";
+ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+if (fs == 5)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+<article id="sun">It's just <br> a matter <br> of time, <br> even the <br> darkest of <br> night is <br> cracked open  by <br> sunshine <br> in pondicherry </article>
+<section>
+  By Megha.P
+  </section>
+  <section>
+    Year: 2020 Date: 4th November
+    </section>
+    
+<p >
+
+            <h2 id="para">--Reviews--</h2>
+            <hr style="width:100%;text-align:left;margin-left:0">
+            <h3 id="para">wonderful.</h3>
+            <span id="para">maya</span>
+<span id="para" class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para" class="fa fa-star"></span>
+<section id="thoughts">heaven on earth</section>
+
+</p>
+<hr style="width:60%;text-align:left;margin-left:0">
+          <p>
+            
+            <h3 id="para">good place!</h3>
+            <span id="para">laya</span>
+            <span id="para" class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star "></span>
+<span id="para" class="fa fa-star"></span>
+<section id="thoughts">loved the beautiful places</section>
+          </p>
+          <hr style="width:60%;text-align:left;margin-left:0">
+          
+          <p>
+            
+            <h3 id="para">it was ok.</h3>
+            <span id="para">piya</span>
+            <span id="para" class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star checked"></span>
+<span id="para"class="fa fa-star "></span>
+<span id="para"class="fa fa-star "></span>
+<span id="para" class="fa fa-star"></span>
+<section id="thoughts">It was really hyped up a lot, was expecting something even better.</section>
+
+          </p>
+          <hr style="width:100%;text-align:left;margin-left:0">
+          <br><br><br><br>
+          <div class="header" >
+            <a href="#default" class="logo">Traveller</a>
+            <div class="header-right">
+              <a class="active" href="#home">Home</a>
+              <a href="#">Places</a>
+              <a href="#last">Gallery</a>
+              <a href="#">About Us</a>
+              <a href="#">Search</a>
+              
+            </div>
+          </div>
+          
+          <footer >
+            copyright  <i class="fa fa-copyright" aria-hidden="true"> </i> 2020 traveller
+          </footer>
+            
+         
+        
+</body>
+        </html>
+

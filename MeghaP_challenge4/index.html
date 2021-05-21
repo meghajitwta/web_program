@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>challenge-4</title></head>
+<body>
+<script type="text/javascript">
+var str = prompt("Enter the Input", "");
+if (!(isNaN(str))) //isNaN means is Not a Number
+{
+var num, rev = 0,remainder;
+num = parseInt(str);
+while (num != 0)
+{
+remainder = num % 10;
+num = parseInt(num / 10);
+rev = rev * 10 + remainder;
+}
+pr=str*rev;
+alert("The product of " + str + " and its reverse " + rev +" is " + pr);
+}
+else
+{
+const vowels = ["a", "e", "i", "o", "u"]
+function countVowel(str) {
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+    return count;
+}
+const result = countVowel(str);
+console.log(result);
+alert("no. of vowels is " +result);
+}
+</script>
+</body>
+</html>
